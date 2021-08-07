@@ -6,7 +6,7 @@
     <div class='col s12 m4'>
       <div class='card'>
         <div class='card-image'>
-          {{! todo: editIcon }}
+          {{{editIcon user ../user _id}}}
         </div>
         <div class='card-content center-align'>
           <h5>
@@ -15,7 +15,7 @@
           <p>
             {{stripTags (truncate body 100)}}
           </p>
-          <br />
+          <br/>
           <div class='chip'>
             <img src="{{user.image}}" alt='userimage' />
             <a href="/stories/user/{{user._id}}">
